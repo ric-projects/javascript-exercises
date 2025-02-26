@@ -1,4 +1,13 @@
-const reverseString = function() {
+const reverseString = function(word) {
+    word = Array.from(word);
+    const revWord = [];
+    word.flatMap((x) => revWord.unshift(x));
+    let newWord = revWord.join('');
+    return newWord;
+    
+
+
+
 
 };
 
